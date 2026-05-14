@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "altitude-one",
+  "name": "altitudeoneee",
   "compatibility_date": "2026-05-13",
   "compatibility_flags": ["nodejs_compat"],
   "main": "src/server.ts",
