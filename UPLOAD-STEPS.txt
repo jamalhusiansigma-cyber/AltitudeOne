@@ -1,0 +1,33 @@
+ALTITUDE ONE UPLOAD STEPS
+
+No terminal commands are needed.
+
+1. Unzip Altitude-One-GitHub-Upload.zip.
+2. Create a new empty repository on GitHub.
+3. Drag the unzipped files into GitHub's upload page.
+4. Commit the files.
+5. In Cloudflare Workers & Pages, create a new Pages app from GitHub.
+6. Select the repository.
+7. Use these Cloudflare build settings:
+
+Framework preset: Vite
+Build command: bun run build
+Build output directory: .output/public
+Root directory: leave blank
+
+8. Add these Cloudflare environment variables:
+
+GMAIL_CLIENT_ID
+GMAIL_CLIENT_SECRET
+GMAIL_REFRESH_TOKEN
+CONTACT_TO_EMAIL
+CONTACT_FROM_EMAIL
+
+9. Deploy.
+
+Cloudflare runs the build command. You do not need to run it on your computer.
+
+If your site shows HTTP ERROR 404, edit the Cloudflare build settings and make sure
+Build output directory is exactly:
+
+.output/public
